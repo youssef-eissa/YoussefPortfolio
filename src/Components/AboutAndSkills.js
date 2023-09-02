@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 function AboutAndSkills() {
     const { ref,inView} = useInView({
-        threshold:0.5
+        threshold:0.2
     })
     const animation = useAnimation()
     const animation2 = useAnimation()
@@ -15,7 +15,7 @@ function AboutAndSkills() {
         if (inView) {
             animation.start({
                 opacity: 1,
-                transition:{duration:0.7}
+                transition:{duration:0.7 }
             })
             animation2.start({
                 opacity: 1,
@@ -35,10 +35,10 @@ function AboutAndSkills() {
 
 return (
     <div className='container my-5'>
-        <div ref={ref} id='about' className='row d-flex flex-wrap '>
+        <div ref={ref} id='about' className='row d-flex justify-content-center flex-wrap '>
         <motion.div
             animate={animation}
-            className='about col-md-6 col-12 p-0'>
+            className='about col-md-6 col-11 p-0'>
             <h1 className='col-12 text-center'><span style={{ color: "coral" }}>About</span> Me</h1>
             <p className='col-12 text-center'>
             I'm a <span style={{color:"coral",fontWeight:"bold"}}>Frontend Developer</span> based in Egypt who is passionate about delivering value to businesses through technology. I love the challenge of finding creative solutions to problems, and I enjoy collaborating with teams to achieve great results. <br></br> <br></br>
@@ -48,7 +48,7 @@ return (
         </motion.div>
         <motion.div
             animate={animation2}
-            className='skills col-md-6 col-12 p-3 flex-wrap justify-content-between d-flex'>
+            className='skills col-md-6 col-11 p-3 flex-wrap justify-content-between d-flex'>
             <div className='col-md-5 col-12 box align-items-center flex-column d-flex '>
                 <div className='logo col-4'>
                     <img alt='logo' src={ require("../assest/html.jpeg")} className='img-fluid' />

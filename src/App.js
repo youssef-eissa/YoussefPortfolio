@@ -9,7 +9,7 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
-    <div style={{ fontFamily: 'Bebas Neue' }} className="container-fluid p-0 theBody">
+    <div style={{ fontFamily: 'Bebas Neue' }} className="container-fluid overflow-hidden p-0 theBody">
       <NavBar  />
       <Home />
       <AboutAndSkills/>

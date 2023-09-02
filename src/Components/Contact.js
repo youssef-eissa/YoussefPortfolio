@@ -19,9 +19,6 @@ const schema = yup.object().shape({
     message:yup.string().min(10).required()
 })
 function Contact() {
-  
-
-   
 
     const form=useRef()
     const { register, handleSubmit, formState: { errors } ,resetField} = useForm({
@@ -82,7 +79,7 @@ return (
             </div>
         </div>
         <div className='right text-center text-md-start col-md-6 col-12 p-0'>
-            <h1 className='col-12'>get in <span style={{ color: "coral" }}>touch</span></h1>
+            <h1  className='col-12 get'>get in <span style={{ color: "coral" }}>touch</span></h1>
         <Alert className={`col-12 ${state.alert}`}  severity="success">
         <AlertTitle>Thanks <span style={{color:"coral"}}>{state.FullName.toUpperCase() }</span> for reaching out ,I'll get back to you soon.</AlertTitle>
 

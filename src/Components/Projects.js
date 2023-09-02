@@ -24,7 +24,7 @@ function Projects() {
             })
         } else {
             animation.start({
-                x: "-100vh",
+                x: "-200px",
                 opacity: 0,
                 transition:{duration:0.7}
             })
