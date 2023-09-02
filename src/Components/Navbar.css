@@ -1,0 +1,33 @@
+
+
+.navbar .logo{
+    color: white;
+    font-family: 'Rubik Iso', cursive;
+    font-size: 60px;
+}
+.navbar ul{
+    padding: 0;
+    list-style: none;
+}
+.navbar ul li{
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover{
+    color: coral;
+}
+
+@media (max-width:768px) {
+    .navbar ul{
+        position: absolute;
+        bottom: -260px;
+        background-color: #fafafa;
+        color: #202020;
+        border-radius: 10px;
+        left: 15px;
+        transition: 0.3s;
+        z-index: 3;
+    }
+}

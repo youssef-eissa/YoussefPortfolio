@@ -1,0 +1,33 @@
+.text span:nth-child(1) {
+    font-size: 60px;
+}
+
+.text span:nth-child(2) {
+    font-size: 80px;
+}
+
+.text span:nth-child(3) {
+    font-size: 50px;
+}
+.link{
+    background-color: white;
+    text-decoration: none;
+    font-size: 24px;
+    color: coral;
+    transition: 0.3s;
+}
+.link:hover{
+    background-color: coral;
+    color: white;
+}
+@media (max-width:768px) {
+    .text span:nth-child(1) {
+            font-size: 40px;
+        }
+    .text span:nth-child(2) {
+            font-size: 40px;
+        }
+        .text span:nth-child(3) {
+    font-size: 25px;
+}
+}

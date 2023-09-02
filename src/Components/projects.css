@@ -1,0 +1,25 @@
+.projects .title{
+    font-size: 80px;
+}
+
+.projects-container .theImg{
+    height: 400px;
+}
+.project-box{
+    cursor: pointer;
+}
+.project-box:hover .theImg img{
+    transition: 0.3s;
+}
+.project-box:hover .theImg img{
+    transform: scale(1.5);
+}
+.projects .link{
+    font-size: 34px;
+}
+
+@media (max-width:768px) {
+    .projects .title {
+            font-size: 50px;
+        }
+}

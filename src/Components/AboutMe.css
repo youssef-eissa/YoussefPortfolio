@@ -1,0 +1,10 @@
+.about h1{
+    font-size: 80px !important;
+}
+.about p {
+font-size: 20px;
+font-family: 'Open Sans', sans-serif;
+}
+.skills .box .text{
+    font-size: 56px;
+}
