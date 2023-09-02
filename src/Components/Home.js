@@ -63,7 +63,7 @@ return (
                 <Link target='_blank' to='https://www.facebook.com/Youssef3issa' className='me-3'><FacebookIcon className='rounded' fontSize='large' sx={{ color: "gray","&:hover":{color:"#4267B2",backgroundColor:"white"},transition:"0.3s" }} /></Link>
             </div>
             <div className='col-12 my-5 justify-content-center d-flex'>
-                <Link className='rounded link text-center col-md-3 col-6 py-3 px-2' target='_blank' to='/YoussefPortfolio/public/Youssef_eissa.pdf' download='Youssef_Eissa.pdf' >Download My CV</Link>
+                <Link className='rounded link text-center col-md-3 col-6 py-3 px-2' target='_blank' to='YoussefPortfolio/public/Youssef_Eissa.pdf' download='Youssef_Eissa.pdf' >Download My CV</Link>
             </div>
             </motion.div>
             <motion.div
