@@ -27,7 +27,7 @@
     "react-hook-form": "^7.45.4",
     "react-intersection-observer": "^9.5.2",
     "react-player": "^2.12.0",
-    "react-router-dom": "^6.15.0",
+    "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
     "react-scroll-into-view": "^2.0.2",
     "styled-components": "^5.3.11",
