@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/YoussefPortfolio/static/css/main.8a8f57cd.css",
+    "main.js": "/YoussefPortfolio/static/js/main.94c4ca88.js",
+    "static/js/787.1f11dfe9.chunk.js": "/YoussefPortfolio/static/js/787.1f11dfe9.chunk.js",
+    "static/media/me.png": "/YoussefPortfolio/static/media/me.f63538ba4eb983a22b27.png",
+    "static/media/react.png": "/YoussefPortfolio/static/media/react.a74ce4918787ad8ba66e.png",
+    "static/media/bootstrap.png": "/YoussefPortfolio/static/media/bootstrap.c1c9984ae8997dbe5c90.png",
+    "static/media/html.jpeg": "/YoussefPortfolio/static/media/html.24733c85e7f19e44192a.jpeg",
+    "static/media/css.jpeg": "/YoussefPortfolio/static/media/css.825b2e3b84f33a9bbd1f.jpeg",
+    "static/media/ecom.jpeg": "/YoussefPortfolio/static/media/ecom.5d83a45257348963cf03.jpeg",
+    "static/media/payapi.jpeg": "/YoussefPortfolio/static/media/payapi.6cefd6d2fd1766c19159.jpeg",
+    "static/media/countries.webp": "/YoussefPortfolio/static/media/countries.205b5449c465ee47b6e7.webp",
+    "static/media/JS.png": "/YoussefPortfolio/static/media/JS.3dfb665e058d08c99f28.png",
+    "static/media/github.png": "/YoussefPortfolio/static/media/github.d709f5039bd19313ecbc.png",
+    "static/media/form.webp": "/YoussefPortfolio/static/media/form.1d9019c8493385c875d5.webp",
+    "index.html": "/YoussefPortfolio/index.html",
+    "main.8a8f57cd.css.map": "/YoussefPortfolio/static/css/main.8a8f57cd.css.map",
+    "main.94c4ca88.js.map": "/YoussefPortfolio/static/js/main.94c4ca88.js.map",
+    "787.1f11dfe9.chunk.js.map": "/YoussefPortfolio/static/js/787.1f11dfe9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a8f57cd.css",
+    "static/js/main.94c4ca88.js"
+  ]
+}

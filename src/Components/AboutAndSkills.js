@@ -84,6 +84,18 @@ return (
                     <img alt='logo' src={ require("../assest/github.png")} className='img-fluid' />
                 </div>
                 <div className='col-12 text text-center'>GitHub</div>
+                </div>
+                <div className='col-md-5 col-12 box align-items-center flex-column d-flex '>
+                <div className='logo col-4'>
+                    <img alt='logo' src={ require("../assest/redux.png")} className='img-fluid' />
+                </div>
+                <div className='col-12 text text-center'>Redux</div>
+                </div>
+                <div className='col-md-5 col-12 box align-items-center flex-column d-flex '>
+                <div className='logo col-4'>
+                    <img alt='logo' src={ require("../assest/MaterialUI.png")} className='img-fluid' />
+                </div>
+                <div className='col-12 text text-center'>Material UI</div>
             </div>
         </motion.div>
     </div>
