@@ -40,7 +40,7 @@ return (
         <h1 className='col-12 my-5 title text-center'>My <span style={{color:"coral"}}>Projects</span></h1>
             <div className=' projects-container p-0 d-flex row-gap-5 justify-content-md-between justify-content-center flex-wrap'>
 
-                <Link reloadDocument style={{textDecoration:"none"}} to='https://youssef-eissa.github.io/shopzone/'  className='col-md-5 col-11 project-box rounded overflow-hidden d-flex flex-column'>
+                <Link target='_blank' reloadDocument style={{textDecoration:"none"}} to='https://youssef-eissa.github.io/shopzone/' className='col-md-5 col-11 project-box rounded overflow-hidden d-flex flex-column'>
                 <div className='theImg overflow-hidden col-12'>
                     <img className='img-fluid  h-100 w-100' src={require('../assest/shopzone.png') } alt='proj-img' />
                 </div>
@@ -52,7 +52,7 @@ return (
                 </div>
             </Link>
 
-            <Link reloadDocument to='https://youssef-eissa.github.io/Audiophile-e-commerce/' style={{textDecoration:"none"}} className='col-md-5 col-11 rounded overflow-hidden project-box d-flex flex-column'>
+            <Link target='_blank' reloadDocument to='https://youssef-eissa.github.io/Audiophile-e-commerce/' style={{textDecoration:"none"}} className='col-md-5 col-11 rounded overflow-hidden project-box d-flex flex-column'>
                 <div className='theImg overflow-hidden col-12'>
                     <img className='img-fluid h-100 w-100' src={require('../assest/ecom.jpeg') } alt='proj-img' />
                 </div>
@@ -62,17 +62,17 @@ return (
                     <span style={{textDecoration:"none",fontSize:"16px",color:"coral"}} to='https://youssef-eissa.github.io/Audiophile-e-commerce/'>Show More <KeyboardDoubleArrowRightIcon/> </span>
                 </div>
             </Link>
-            <Link reloadDocument to='https://youssef-eissa.github.io/PayApi-Project' style={{textDecoration:"none"}} className='col-md-5 col-11 project-box rounded overflow-hidden d-flex flex-column project-box'>
+            <Link target='_blank' reloadDocument to='https://movieflix-chi.vercel.app/' style={{textDecoration:"none"}} className='col-md-5 col-11 project-box rounded overflow-hidden d-flex flex-column project-box'>
                 <div className='theImg overflow-hidden col-12'>
-                    <img className='img-fluid h-100 w-100' src={require('../assest/payapi.jpeg') } alt='proj-img' />
+                    <img className='img-fluid h-100 w-100' src={require('../assest/movieflex.png') } alt='proj-img' />
                 </div>
                 <div style={{ backgroundColor: "#dbd5d5",color:"black"}} className='col-12 p-3 text'>
-                    <h3 style={{ color: "coral" }} className='col-12'>PayAPI multi-page website</h3>
+                    <h3 style={{ color: "coral" }} className='col-12'>Movieflix Movies store</h3>
                     <p className='col-12' >A 4 multi-page Website that view the optimal layout for each page depending on their device's screen size.</p>
-                    <span  style={{textDecoration:"none",fontSize:"16px",color:"coral"}} to='https://youssef-eissa.github.io/PayApi-Project'>Show More <KeyboardDoubleArrowRightIcon/> </span>
+                    <span  style={{textDecoration:"none",fontSize:"16px",color:"coral"}} to='https://movieflix-chi.vercel.app/'>Show More <KeyboardDoubleArrowRightIcon/> </span>
                 </div>
             </Link>
-            <Link reloadDocument  to='https://cooclicious.vercel.app/' style={{textDecoration:"none"}} className='col-md-5 col-11 project-box rounded overflow-hidden d-flex flex-column'>
+            <Link target='_blank' reloadDocument to='https://cooclicious.vercel.app/' style={{textDecoration:"none"}} className='col-md-5 col-11 project-box rounded overflow-hidden d-flex flex-column'>
                 <div className='theImg overflow-hidden col-12'>
                     <img className='img-fluid h-100 w-100' src={require('../assest/cooclicious.png') } alt='proj-img' />
                 </div>

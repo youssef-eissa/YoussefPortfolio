@@ -35,7 +35,7 @@ function AboutAndSkills() {
 
 return (
     <div className='container my-5'>
-        <div ref={ref} id='about' className='row d-flex justify-content-center flex-wrap '>
+        <div ref={ref} id='about' className='row d-flex justify-content-center align-items-md-center flex-wrap '>
         <motion.div
             animate={animation}
             className='about col-md-6 col-11 p-0'>
@@ -86,10 +86,22 @@ return (
                 <div className='col-12 text text-center'>GitHub</div>
                 </div>
                 <div className='col-md-5 col-12 box align-items-center flex-column d-flex '>
-                <div className='logo col-4'>
+                    <div className='logo col-4'>
                     <img alt='logo' src={ require("../assest/redux.png")} className='img-fluid' />
                 </div>
                 <div className='col-12 text text-center'>Redux</div>
+                </div>
+                <div className='col-md-5 col-12 box align-items-center flex-column d-flex '>
+                    <div className='logo col-4'>
+                    <img alt='logo' src={ require("../assest/RQ.png")} className='img-fluid' />
+                </div>
+                <div className='col-12 text text-center'>React Query</div>
+                </div>
+                <div className='col-md-5 col-12 box align-items-center flex-column d-flex '>
+                    <div className='logo col-4'>
+                    <img alt='logo' src={ require("../assest/typescript.png")} className='img-fluid' />
+                </div>
+                <div className='col-12 text text-center'>Typescript</div>
                 </div>
                 <div className='col-md-5 col-12 box align-items-center flex-column d-flex '>
                 <div className='logo col-4'>
