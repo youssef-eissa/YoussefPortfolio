@@ -40,6 +40,17 @@ return (
         <h1 className='col-12 my-5 title text-center'>My <span style={{color:"coral"}}>Projects</span></h1>
             <div className=' projects-container p-0 d-flex row-gap-5 justify-content-md-between justify-content-center flex-wrap'>
 
+                <Link target='_blank' reloadDocument to='https://hypershop-three.vercel.app' style={{textDecoration:"none"}} className='col-md-5 col-11 rounded overflow-hidden project-box d-flex flex-column'>
+                <div className='theImg overflow-hidden col-12'>
+                    <img className='img-fluid h-100 w-100' src={require('../assest/hypershop.png') } alt='proj-img' />
+                </div>
+                <div style={{ backgroundColor: "#dbd5d5",color:"black"}} className='col-12 p-3 text'>
+                    <h3 style={{ color: "coral" }} className='col-12'>Hypershop Online Store</h3>
+                    <p>An integrated API website with login authentication for shopping online and allow users to discover all products by categories and ability to show information of every product separetly. </p>
+                    <span style={{textDecoration:"none",fontSize:"16px",color:"coral"}} to='https://hypershop-three.vercel.app'>Show More <KeyboardDoubleArrowRightIcon/> </span>
+                </div>
+            </Link>
+
                 <Link target='_blank' reloadDocument style={{textDecoration:"none"}} to='https://youssef-eissa.github.io/shopzone/' className='col-md-5 col-11 project-box rounded overflow-hidden d-flex flex-column'>
                 <div className='theImg overflow-hidden col-12'>
                     <img className='img-fluid  h-100 w-100' src={require('../assest/shopzone.png') } alt='proj-img' />
@@ -52,16 +63,7 @@ return (
                 </div>
             </Link>
 
-            <Link target='_blank' reloadDocument to='https://youssef-eissa.github.io/Audiophile-e-commerce/' style={{textDecoration:"none"}} className='col-md-5 col-11 rounded overflow-hidden project-box d-flex flex-column'>
-                <div className='theImg overflow-hidden col-12'>
-                    <img className='img-fluid h-100 w-100' src={require('../assest/ecom.jpeg') } alt='proj-img' />
-                </div>
-                <div style={{ backgroundColor: "#dbd5d5",color:"black"}} className='col-12 p-3 text'>
-                    <h3 style={{ color: "coral" }} className='col-12'>Audiophile e-commerce website</h3>
-                    <p>A website that allows users to Add/Remove products from the cart, checkout and keep track of what's in the cart, even after refreshing the browser.</p>
-                    <span style={{textDecoration:"none",fontSize:"16px",color:"coral"}} to='https://youssef-eissa.github.io/Audiophile-e-commerce/'>Show More <KeyboardDoubleArrowRightIcon/> </span>
-                </div>
-            </Link>
+          
             <Link target='_blank' reloadDocument to='https://movieflix-chi.vercel.app/' style={{textDecoration:"none"}} className='col-md-5 col-11 project-box rounded overflow-hidden d-flex flex-column project-box'>
                 <div className='theImg overflow-hidden col-12'>
                     <img className='img-fluid h-100 w-100' src={require('../assest/movieflex.png') } alt='proj-img' />
