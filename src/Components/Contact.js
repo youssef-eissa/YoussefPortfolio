@@ -39,8 +39,9 @@ function Contact() {
         FullName: "",
         alert:'d-none'
     })
+    
     async function submitForm(data) {
-        await emailJs.sendForm("service_i1oba7q", "template_stwx1cs", form.current, "luB66O0OTEl_d-eHN")
+        await emailJs.sendForm("service_77n3sn8", "template_stwx1cs", form.current, "luB66O0OTEl_d-eHN")
             .then(() => {
                 dispatch({ type: 'fullName', payload: data.fullname })
                 dispatch({type:"alert"})
