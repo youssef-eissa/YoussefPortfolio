@@ -9,6 +9,8 @@ import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
+import { Typewriter } from 'react-simple-typewriter'
+
 
 function Home() {
     const { ref, inView } = useInView({
@@ -44,7 +46,22 @@ function Home() {
                 }
             })
         }
-    },[inView,animation,animation2])
+    }, [inView, animation, animation2])
+    const  TypeAnimation = () => {
+    return (
+        <Typewriter
+            words={["React JS", "TypeScript", "Redux", "React Query", "Bootstrap", "Material UI",]}
+            loop
+            cursor
+            cursorStyle='|'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+            
+            
+        />
+);
+};
 return (
     <div className='container'>
 <div ref={ref} className='row d-flex  align-items-center home'>
@@ -55,7 +72,8 @@ return (
             className='text d-flex flex-column align-items-center align-items-md-start p-0 col-md-6 col-12'>
             <motion.span >Hello</motion.span>
             <span>I'M YOUSSEF EISSA</span>
-            <span>Frontend Developer using <span style={{ color: "coral" }}>React JS</span></span>
+            <span >Frontend Developer using <span className='typeAnimation'><TypeAnimation/></span></span>
+               
             <div className='socials d-flex justify-content-center col-12'>
                 <Link target='_blank' to='https://github.com/youssef-eissa' className='me-3'><GitHubIcon className='rounded' fontSize='large' sx={{ color: "gray", "&:hover": { color: "#171515", backgroundColor: "white" }, transition: "0.3s" }} /></Link>
                 <Link target='_blank' to='https://wa.me/1003003433' className='me-3'><WhatsAppIcon className='rounded' fontSize='large' sx={{ color: "gray", "&:hover": { color: "white", backgroundColor: "#25D366" }, transition: "0.3s" }} /></Link>

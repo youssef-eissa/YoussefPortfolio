@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 function AboutAndSkills() {
     const { ref,inView} = useInView({
-        threshold:0.2
+        threshold:0.1
     })
     const animation = useAnimation()
     const animation2 = useAnimation()
@@ -43,7 +43,7 @@ return (
             <p className='col-12 text-center'>
             I'm a <span style={{color:"coral",fontWeight:"bold"}}>Frontend Developer</span> based in Egypt who is passionate about delivering value to businesses through technology. I love the challenge of finding creative solutions to problems, and I enjoy collaborating with teams to achieve great results. <br></br> <br></br>
             I am dedicated to keeping up-to-date with the latest technologies and trends to provide the best solutions for my clients. <br></br> <br></br>
-                I pay great attention to details in the design and development of my projects. My ultimate goal is to create software that is both user-friendly and impactful in achieving the client's objectives.
+            I pay great attention to details in the design and development of my projects. My ultimate goal is to create software that is both user-friendly and impactful in achieving the client's objectives.
             </p>
         </motion.div>
         <motion.div

@@ -7,8 +7,12 @@
 }
 
 .text span:nth-child(3) {
-    font-size: 50px;
+    font-size: 40px;
 }
+.text span:nth-child(3) .typeAnimation{
+    color: coral ;
+}
+
 .link{
     background-color: white;
     text-decoration: none;
@@ -22,10 +26,10 @@
 }
 @media (max-width:768px) {
     .text span:nth-child(1) {
-            font-size: 40px;
+            font-size: 30px;
         }
     .text span:nth-child(2) {
-            font-size: 40px;
+            font-size: 30px;
         }
         .text span:nth-child(3) {
     font-size: 25px;
