@@ -119,22 +119,21 @@ return (
 
                 <motion.div className='col-md-5 col-11' animate={animation2}>
 
-                <Link target='_blank' reloadDocument style={{textDecoration:"none"}} to='https://youssef-eissa.github.io/shopzone/' className='col-12 project-box rounded overflow-hidden d-flex flex-column'>
+                <Link target='_blank' reloadDocument style={{textDecoration:"none"}} to='https://allocate-realestate.vercel.app/' className='col-12 project-box rounded overflow-hidden d-flex flex-column'>
                 <div className='theImg overflow-hidden col-12'>
-                    <img className='img-fluid  h-100 w-100' src={require('../assest/shopzone.png') } alt='proj-img' />
+                    <img className='img-fluid  h-100 w-100' src={require('../assest/allocate.png') } alt='proj-img' />
                 </div>
                 <div style={{ backgroundColor: "#dbd5d5",color:"black"}} className=' col-12 p-3 text'>
-                    <h3 style={{ color: "coral" }} className='col-12'>ShopZone e-commerce website with API
-                    </h3>
-                    <p>An integrated API website with login page that allow user to add and remove products from the cart.</p>
+                    <h3 style={{ color: "coral" }} className='col-12'>Allocte Real Estate website</h3>
+                    <p>An integrated API website with sign in and sign up for users and admins for listing existing properties and allow users to sell their own properties by creating an account and ability to show information of every property separetly.</p>
                     <span style={{textDecoration:"none",fontSize:"16px",color:"coral"}} to='https://youssef-eissa.github.io/shopzone/'>Show More <KeyboardDoubleArrowRightIcon/> </span>
                 </div>
             </Link>
             </motion.div>
 
           
-           <motion.div animate={animation3} className='col-md-5 col-11'>
-             <Link target='_blank' reloadDocument to='https://movieflix-chi.vercel.app/' style={{textDecoration:"none"}} className='col-12 project-box rounded overflow-hidden d-flex flex-column project-box'>
+        <motion.div animate={animation3} className='col-md-5 col-11'>
+            <Link target='_blank' reloadDocument to='https://movieflix-chi.vercel.app/' style={{textDecoration:"none"}} className='col-12 project-box rounded overflow-hidden d-flex flex-column project-box'>
                 <div className='theImg overflow-hidden col-12'>
                     <img className='img-fluid h-100 w-100' src={require('../assest/movieflex.png') } alt='proj-img' />
                 </div>

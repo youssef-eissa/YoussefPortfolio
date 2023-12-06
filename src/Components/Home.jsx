@@ -71,7 +71,7 @@ return (
             style={{ fontFamily: 'Bebas Neue' }}
             className='text d-flex flex-column align-items-center align-items-md-start p-0 col-md-6 col-12'>
             <motion.span >Hello</motion.span>
-            <span>I'M YOUSSEF EISSA</span>
+            <span>I'M <span style={{ color: "coral" ,fontSize:'inherit'}}>YOUSSEF EISSA</span></span>
             <span >Frontend Developer using <span className='typeAnimation'><TypeAnimation/></span></span>
                
             <div className='socials d-flex justify-content-center col-12'>
