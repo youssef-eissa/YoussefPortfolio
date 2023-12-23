@@ -133,14 +133,14 @@ return (
 
           
         <motion.div animate={animation3} className='col-md-5 col-11'>
-            <Link target='_blank' reloadDocument to='https://movieflix-chi.vercel.app/' style={{textDecoration:"none"}} className='col-12 project-box rounded overflow-hidden d-flex flex-column project-box'>
+            <Link target='_blank' reloadDocument to='https://netflix-clone-wine-one.vercel.app/' style={{textDecoration:"none"}} className='col-12 project-box rounded overflow-hidden d-flex flex-column project-box'>
                 <div className='theImg overflow-hidden col-12'>
-                    <img className='img-fluid h-100 w-100' src={require('../assest/movieflex.png') } alt='proj-img' />
+                    <img className='img-fluid h-100 w-100' src={require('../assest/netflix.png') } alt='proj-img' />
                 </div>
                 <div style={{ backgroundColor: "#dbd5d5",color:"black"}} className='col-12 p-3 text'>
-                    <h3 style={{ color: "coral" }} className='col-12'>Movieflix Movies store</h3>
-                    <p className='col-12' >A 4 multi-page Website that view the optimal layout for each page depending on their device's screen size.</p>
-                    <span  style={{textDecoration:"none",fontSize:"16px",color:"coral"}} to='https://movieflix-chi.vercel.app/'>Show More <KeyboardDoubleArrowRightIcon/> </span>
+                    <h3 style={{ color: "coral" }} className='col-12'>Netflix Clone</h3>
+                    <p className='col-12' >An integrated API Netflix clone to discover movies and series and allow users to show similars and info of each one.</p>
+                    <span  style={{textDecoration:"none",fontSize:"16px",color:"coral"}} to='https://netflix-clone-wine-one.vercel.app/'>Show More <KeyboardDoubleArrowRightIcon/> </span>
                 </div>
             </Link>
         </motion.div>
