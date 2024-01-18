@@ -1,0 +1,70 @@
+.about{
+    margin-top: 80px !important;
+}
+.leftBox p{
+color: #8892B0;
+font-size: 20px;
+}
+.leftBox p span{
+color: #64FFDA;
+}
+.techs{
+    height: 80px;
+}
+
+.imgcon{
+    position: relative;
+}
+
+.imgBoxabout{
+    transition: 0.5s;
+}
+
+.imgcon .imgBoxabout:hover{
+    transform: translate(-5px,-5px);
+}
+
+
+.borderShadow{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    height:300px;
+    border-radius: 5px;
+    z-index: -1;
+    border: 2px solid #64FFDA;
+}
+
+.skill span{
+position: relative;
+}
+.skill span:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background-color: #64FFDA;
+    transition: 0.3s
+}
+
+.skill span:hover:after {
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .about{
+        margin-top: 0px !important;
+    }
+    .borderShadow {
+            width: 250px;
+            height: 250px;
+    top: 10px;
+    left: 70px !important;
+        }
+    .leftBox p {
+    font-size: 16px;
+    }
+}

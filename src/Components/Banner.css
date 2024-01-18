@@ -1,0 +1,91 @@
+.banner{
+    height: 800px;
+}
+.banner div:nth-child(1){
+    color: #64FFDA;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
+.banner h1:first-of-type {
+    color: #ccd6f6;
+    font-family: 'Hind', sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+}
+.banner h1:nth-of-type(2){
+        color: #8892B0;
+        font-family: 'Hind', sans-serif;
+        font-weight: 600;
+        font-size: 80px;
+}
+.banner p{
+    color: #8892B0;
+}
+.banner p span{
+    color: #64FFDA;
+}
+.links{
+    position: fixed;
+    left: 80px;
+    bottom: 0;
+}
+.links .line{
+    width: 1px;
+    height: 90px;
+    background-color:#8892B0 ;
+}
+.links .icon{
+    transition: 0.3s;
+}
+.links .icon:hover{
+    transform: translateY(-5px);
+}
+.links .icon:nth-child(1):hover {
+    background-color: #333;
+}
+.links .icon:nth-child(2):hover {
+    background-color: #0077b5;
+}
+
+.links .icon:nth-child(3):hover {
+    background-color: #25D366;
+}
+.links .icon:nth-child(4):hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.mailLink{
+    text-decoration: none;
+    color: #8892B0;
+    font-family: 'Roboto Mono', monospace;
+    transition: 0.3s;
+    font-size: 12px;
+}
+.mailLink:hover{
+    color: #64FFDA;
+    transform: translateX(-5px);
+}
+.mail .line{
+    width: 90px;
+    height: 1px;
+    background-color: #8892B0;
+}
+.mail{
+    position: fixed;
+    right: 0px;
+    bottom: 130px;
+    transform: rotate(90deg);
+}
+
+@media (max-width:768px) {
+    .banner h1:first-of-type {
+        font-size: 40px;
+        }
+    .banner h1:nth-of-type(2) {
+        font-size: 35px;
+    }
+    .banner {
+        height: 600px;
+        }
+
+}

@@ -1,41 +1,91 @@
+import React, { useEffect, useRef, useState } from 'react'
 import './Navbar.css'
+import { StyledLinkDiv } from './styled/StyledLink'
+import { motion } from 'framer-motion'
 import ScrollIntoView from 'react-scroll-into-view'
-import TemporaryDrawer from './MUI/Drawer';
+import TemporaryDrawer from './antd/Menu'
+function Navbar() {
+    const NavBarRef=useRef(null)
+    const variants = {
+        start: {
+            opacity: 0,
+            y: -20,
+        },
+        animate: {
+            opacity: 1,
+            y:0,
+        }
+    }
+    const [lastScroll, setScroll] = useState(0)
 
+    function handleScroll() {
+        const windowScroll = window.scrollY
+        if (windowScroll > lastScroll+50) {
+            NavBarRef.current.style.transform='translateY(-100%)'
+            NavBarRef.current.style.transition = '0.3s'
+            NavBarRef.current.style.position = 'fixed'
+            NavBarRef.current.style.top = '0'
+            setScroll(windowScroll)
 
-function NavBar() {
-
-return (
-    <div className='container navbarcon'>
-        <div  className='navbar p-0 d-flex justify-content-between row'>
-        <div style={{color:"coral"}} className='logo col-6 p-0 text-center text-md-start'>
-            YE
-        </div>
-        <ul  className={`links justify-content-end align-items-center m-0 fs-4 col-md-6 col-11 flex-md-row flex-column d-none d-md-flex`}>
-
-            <ScrollIntoView  className='col-md-3 col-12 text-center my-md-0 my-3' selector='#home'>
-            <li>Home</li>
-            </ScrollIntoView>
-
-            <ScrollIntoView className='col-md-3 col-12 text-center my-md-0 my-3' selector='#about'>
-        <li>About</li>
-            </ScrollIntoView>
-
-            <ScrollIntoView  className='col-md-3 col-12 text-center my-md-0 my-3' selector='#portfolio'>
-            <li >Projects</li>
-            </ScrollIntoView>
-
-            <ScrollIntoView  className='col-md-3 col-12 text-center my-md-0 my-3' selector='#contact'>
-        <li>Contact</li>
-            </ScrollIntoView>
-
-            </ul>
-            <div  className='d-md-none col-3 p-0 d-flex justify-content-center '>
-                <TemporaryDrawer />
+        } else if (windowScroll+50 < lastScroll) {
+            NavBarRef.current.style.transform='translateY(0)'
+            NavBarRef.current.style.transition = '0.3s'
+            NavBarRef.current.style.position = 'fixed'
+            NavBarRef.current.style.top = '0'
+            setScroll(windowScroll)
+            
+        } else if (windowScroll === 0 ||lastScroll === 0) {
+            NavBarRef.current.style.transition = '0.3s'
+            NavBarRef.current.style.position = 'relative'
+            setScroll(windowScroll)
+        }
+    }
+    
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+        return ()=> window.removeEventListener('scroll',handleScroll)
+    })
+    
+    return (
+        <div className='container-fluid'>
+            <div className='row d-flex justify-content-center'>
+                <div ref={NavBarRef} className='p-0 navbar col-md-10 col-12  d-flex justify-content-cente align-items-center'>
+                        <ScrollIntoView selector='#banner'>
+                        <div className='logo ms-2 d-flex align-items-center justify-content-center'>
+                        <h4 className=' d-flex align-items-center justify-content-center m-0'>Y</h4>
+                        <div className='smallPolygon'></div>
+                    </div>
+                    </ScrollIntoView>
+                    <div className='navlinks d-md-flex d-none col-9 d-flex justify-content-end align-items-center'>
+                        <ScrollIntoView selector='#aboutSection' >
+                            <motion.div id='about' initial='start' animate='animate' transition={{delay:0.1}} variants={variants} className='me-4'>
+                            <span className='me-2'>01.</span>
+                            About Me
+                        </motion.div>
+                        </ScrollIntoView>
+                        <ScrollIntoView selector='#projects'>
+                            <motion.div initial='start' animate='animate' transition={{delay:0.2}} variants={variants} className='me-4'>
+                            <span className='me-2 col-3'>02.</span>
+                            Projects
+                        </motion.div>
+                        </ScrollIntoView>
+                        <ScrollIntoView selector='#contact'>
+                            <motion.div initial='start' animate='animate' transition={{delay:0.3}} variants={variants} className='me-4 '>
+                            <span className='me-2 '>03.</span>
+                            Contact
+                        </motion.div>
+                        </ScrollIntoView>
+                        <motion.div initial='start' animate='animate' transition={{delay:0.4}} variants={variants} className='col-1 '>
+                            <StyledLinkDiv target={'_blank'} padding={'6px 16px'} to='https://drive.google.com/file/d/1MIFUbm4PygoLIanNEhK2LDigInJx1pYP/view?usp=drive_link' link='Resume'/>
+                        </motion.div>
+                    </div>
+                    <div className='col-4 d-md-none d-flex justify-content-end'>
+                        <TemporaryDrawer/>
+                </div>
+                </div>
             </div>
-    </div>
     </div>
 )
 }
 
-export default NavBar
+export default Navbar
