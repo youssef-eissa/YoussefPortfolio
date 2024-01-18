@@ -8,6 +8,7 @@ import '../Navbar.css'
 import ScrollIntoView from 'react-scroll-into-view'
 import { motion } from 'framer-motion';
 import { StyledLinkDiv } from '../styled/StyledLink';
+import { SocialIcon } from 'react-social-icons';
 
 
 
@@ -17,7 +18,7 @@ export default function TemporaryDrawer() {
     left: false,
     });
   
-   const variants = {
+    const variants = {
         start: {
             opacity: 0,
             y: -20,
@@ -38,12 +39,12 @@ export default function TemporaryDrawer() {
 
     const list = (anchor) => (
     <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      sx={{ width:  300 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List className='d-flex navlinks flex-column align-items-center justify-content-center' style={{backgroundColor: '#0A1930', color: 'white',height: '100vh'}}>
+      <List className='d-flex p-0 navlinks flex-column align-items-center justify-content-center' style={{backgroundColor: '#0A1930', color: 'white',height: '100vh'}}>
           <ScrollIntoView selector='#aboutSection' >
                             <motion.div id='about' initial='start' animate='animate' transition={{delay:0.1}} variants={variants} className=' d-flex flex-column align-items-center'>
                             <span className='mb-2 '>01.</span>
@@ -61,10 +62,21 @@ export default function TemporaryDrawer() {
                             <span className='mb-2 '>03.</span>
                             Contact
                         </motion.div>
-          </ScrollIntoView>
-          <motion.div initial='start' animate='animate' transition={{delay:0.4}} variants={variants} className='col-5 mt-3 '>
-                            <StyledLinkDiv target={'_blank'} padding={'6px 16px'} to='https://drive.google.com/file/d/1MIFUbm4PygoLIanNEhK2LDigInJx1pYP/view?usp=drive_link' link='Resume'/>
-                        </motion.div>
+                    </ScrollIntoView>
+                    <motion.div initial='start' animate='animate' transition={{delay:0.4}} variants={variants} className='col-5 mt-3 '>
+                      <StyledLinkDiv target={'_blank'} padding={'6px 16px'} to='https://drive.google.com/file/d/1MIFUbm4PygoLIanNEhK2LDigInJx1pYP/view?usp=drive_link' link='Resume'/>
+          </motion.div>
+          <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.5}} className=' d-flex justify-content-around mt-5 col-12 '>
+                        <SocialIcon target='_blank' url='https://github.com/youssef-eissa' className='icon rounded mb-3' network='github' bgColor='transparent' />
+                        
+                        <SocialIcon target='_blank' className='icon rounded' network='linkedin' bgColor='transparent' url='https://www.linkedin.com/in/youssef-eissa1812' />
+                        
+                        <SocialIcon  target='_blank' className='icon rounded ' network='whatsapp' bgColor='transparent' url='https://wa.me/+201003003433?text=Hi,I%27m%20interested%20in%20your%20portfolio' />
+                        
+                        <SocialIcon  target='_blank' url='https://www.instagram.com/youssef3issa/' className='icon rounded ' network='instagram' bgColor='transparent' />
+                        
+                    </motion.div>
+            
       </List>
      
     </Box>

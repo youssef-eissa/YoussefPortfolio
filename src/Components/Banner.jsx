@@ -37,7 +37,7 @@ function Banner() {
                         
                         <SocialIcon target='_blank' className='icon rounded mb-3' network='whatsapp' bgColor='transparent' url='https://wa.me/+201003003433?text=Hi,I%27m%20interested%20in%20your%20portfolio' />
                         
-                        <SocialIcon target='_blank' url='https://www.instagram.com/youssef3issa/' className='icon rounded mb-3' network='instagram' bgColor='transparent' />
+                        <SocialIcon  target='_blank' url='https://www.instagram.com/youssef3issa/' className='icon rounded mb-3' network='instagram' bgColor='transparent' />
                         
                         <div className='line'></div>
                     </motion.div>
