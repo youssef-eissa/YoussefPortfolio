@@ -76,7 +76,7 @@ function Navbar() {
                         </motion.div>
                         </ScrollIntoView>
                         <motion.div initial='start' animate='animate' transition={{delay:0.4}} variants={variants} className='col-1 '>
-                            <StyledLinkDiv target={'_blank'} padding={'6px 16px'} to='https://drive.google.com/file/d/1MIFUbm4PygoLIanNEhK2LDigInJx1pYP/view?usp=drive_link' link='Resume'/>
+                            <StyledLinkDiv target={'_blank'} padding={'6px 16px'} to='https://drive.google.com/file/d/1Fqj6dtvQvCrFSbJL2eMSszSL9Gc-FErI/view?usp=sharing' link='Resume'/>
                         </motion.div>
                     </div>
                     <div className='col-4 d-md-none d-flex justify-content-end'>
