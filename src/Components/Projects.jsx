@@ -1,47 +1,49 @@
 import React from 'react'
-import './Projects.css'
-import { StyledHeader } from './styled/StyledHeader'
+import './projects.css'
 import ProjectBox from './ProjectBox'
-import allocate from '../assest/allocate.png'
-import hypershop from "../assest/hypershop.png"
-import netflex from '../assest/netflix.png'
+import lemaschou from '../assest/lemaschou.png'
+import pixel from "../assest/pixel.png"
+import amtalek from '../assest/amtalek.png'
 import cooclicious from '../assest/cooclicious.png'
 import { StyledLinkDiv } from './styled/StyledLink'
+import { StyledHeader } from './styled/StyledHeader'
 
 function Projects() {
     return (
-        <div className='container '>
+        <div className='container-md container-fluid'>
             <div className='row d-flex justify-content-center'>
-                <div id='projects' className='col-10 p-0 d-flex flex-column align-items-center projects'>
+                <div id='projects' className='col-lg-10 col-xl-11 col-12 p-0 d-flex flex-column align-items-center projects'>
                     <StyledHeader className='d-flex me-auto'><span>02.</span>Some Things I’ve Built</StyledHeader>
                     <ProjectBox
                         Align={'align-items-end'}
-                        img={allocate}
-                        link={'https://allocate-realestate.vercel.app/'}
-                        projectDescription='An integrated API website with sign in and sign up for users and admins for listing existing properties and allow users to sell their own properties by creating an account and ability to show information of every property separately.'
-                        projectTitle={'Allocate Real Estate'}
+                        img={lemaschou}
+                        link={'https://www.lemaschou.sa/en'}
+                        projectDescription='Le Maschou is a modern, responsive restaurant website built with
+                        Next.js and Tailwind CSS. Designed for a Saudi Arabian venue, it
+                        features a stunning landing page, a venue showcase, and a detailed
+                        menu. The site is optimized for performance and SEO, offering users a
+                        smooth and immersive experience.'
+                        projectTitle={'Le Maschou restaurant'}
                         iconsJustify={'justify-content-end'}
-                        github='https://github.com/youssef-eissa/allocate-realestate'
-                        flex={'flex-row'}
+                        flex={'flex-md-row flex-column'}
                     />
                     <ProjectBox
-                        img={hypershop}
-                        link={'https://hypershop-three.vercel.app'}
-                        projectDescription='An integrated API website with login authentication for shopping online and allow users to discover all products by categories and ability to show information of every product separately.'
-                        projectTitle={'Hypershop Online Store'}
+                        img={pixel}
+                        link={'https://www.pixelcrafters.tech/en'}
+                        projectDescription='A modern and dynamic Next.js website showcasing Pixel Crafters expertise. With a sleek design and seamless navigation, it features essential pages: Home, Services, About Us, Projects, and Careers,
+                        ensuring an engaging user experience.'
+                        projectTitle={'Pixel Crafters Portfolio'}
                         iconsJustify={'justify-content-start'}
-                        github='https://github.com/youssef-eissa/hypershop'
-                        flex={'flex-row-reverse'}
+                        flex={'flex-md-row-reverse flex-column'}
                     />
                         <ProjectBox
                         Align={'align-items-end'}
-                        img={netflex}
-                        link={'https://netflix-clone-wine-one.vercel.app/'}
-                        projectDescription='An integrated API Netflix clone with sign in for users to discover existing movies and series and allow users to all similar for movies and series and info of each one separately.'
-                        projectTitle={'Netflix Clone'}
+                        img={amtalek}
+                        link={'https://www.amtalek.com/en'}
+                        projectDescription='Amtalek allows users to create personal accounts and provides an upcoming social media platform showcasing a large scale of properties and projects. Additionally, Amtalek offers various subscription packages to cater to different user needs.'
+                        projectTitle={'Amtalek Real Estate Website'}
                         iconsJustify={'justify-content-end'}
-                        github='https://github.com/youssef-eissa/netflix-clone'
-                        flex={'flex-row'}
+                        flex={'flex-md-row flex-column'}
                     />
                     <ProjectBox
                         
@@ -51,7 +53,7 @@ function Projects() {
                         projectTitle={'Cooclicious Food Recipes'}
                         iconsJustify={'justify-content-start'}
                         github='https://github.com/youssef-eissa/cooclicious'
-                        flex={'flex-row-reverse'}
+                        flex={'flex-md-row-reverse flex-column'}
                     />
                     <div className='col-md-2 col-6 mt-5'>
                         <StyledLinkDiv target={'_blank'} to='https://github.com/youssef-eissa?tab=repositories' padding={'20px 25px'} link='Show More!'/>

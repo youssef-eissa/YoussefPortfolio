@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from 'react'
 import './About.css'
-import { StyledHeader } from './styled/StyledHeader'
 import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
 import me from '../assest/me.png'
 import { ImgStyledDiv } from './styled/ImgStyledDiv';
+
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { useAnimation } from 'framer-motion';
+import { StyledHeader } from './styled/StyledHeader';
 
 function About() {
     const { ref, inView } = useInView({ threshold: 0.2 })
@@ -44,13 +45,13 @@ function About() {
     })
     
 return (
-    <div  className='container'>
+    <div  className='container-md container-fluid'>
         
         <div  className='row d-flex justify-content-center'>
-            <motion.div animate={animate} ref={ref} id='aboutSection' className='col-md-10 col-12 d-flex flex-column about p-0'>
+            <motion.div animate={animate} ref={ref} id='aboutSection' className='col-lg-10 col-xl-11 col-11 d-flex flex-column about p-0'>
                 <StyledHeader><span>01.</span>About Me</StyledHeader>
-                <div className='col-12 mt-3 d-flex flex-md-row flex-column justify-content-between'>
-                    <div className='col-md-6 col-12 d-flex flex-column leftBox'>
+                <div className='col-12 mt-3 d-flex flex-lg-row flex-column justify-content-between  gap-4 gap-md-0'>
+                    <div className='col-lg-6  col-12 d-flex flex-column leftBox'>
                         <p>I'm a <span>Frontend Developer</span> based in Egypt who is passionate about delivering value to businesses through technology. I love the challenge of finding <span>creative solutions</span> to problems, and I enjoy collaborating with teams to achieve great results. <br></br> <br></br>
                             
                         I'm dedicated to keeping up-to-date with the latest technologies and trends to provide the best solutions for my clients. <br></br> <br></br>
@@ -61,28 +62,47 @@ return (
 
 
                             <div className='techs col-12 d-flex flex-column flex-wrap'>
-                                <div className='col-6 skill'><span><PlayArrowOutlinedIcon sx={{ color: '#64FFDA', fontSize: 10 }} /></span>
-                                    <span className='ms-1' style={{ color: '#8892B0' }}>React</span>
+                                <div className='col-6 skill '>
+                                    <span><PlayArrowOutlinedIcon sx={{ color: '#64FFDA', fontSize: 10 }} /></span>
+                                    <span className='ms-1' style={{ color: '#8892B0' }}>React.js</span>
                                 </div>
-                                <div className='col-6 skill'><span><PlayArrowOutlinedIcon sx={{ color: '#64FFDA', fontSize: 10 }} /></span>
+                                
+                                <div className='col-6 skill'>
+                                    <span><PlayArrowOutlinedIcon sx={{ color: '#64FFDA', fontSize: 10 }} /></span>
+                                    <span className='ms-1' style={{ color: '#8892B0' }}>Next.js</span>
+                                </div>
+                                <div className='col-6 skill'>
+                                    <span><PlayArrowOutlinedIcon sx={{ color: '#64FFDA', fontSize: 10 }} /></span>
+                                    <span className='ms-1' style={{ color: '#8892B0' }}>Unit Testing</span>
+                                </div>
+                                <div className='col-6 skill'>
+                                    <span><PlayArrowOutlinedIcon sx={{ color: '#64FFDA', fontSize: 10 }} /></span>
+                                    <span className='ms-1' style={{ color: '#8892B0' }}>Tailwind</span>
+                                </div>
+                                <div className='col-6 skill'>
+                                    <span><PlayArrowOutlinedIcon sx={{ color: '#64FFDA', fontSize: 10 }} /></span>
                                     <span className='ms-1' style={{ color: '#8892B0' }}>Typescript</span>
                                 </div>
-                                <div className='col-6 skill'><span><PlayArrowOutlinedIcon sx={{ color: '#64FFDA', fontSize: 10 }} /></span>
+                                <div className='col-6 skill'>
+                                    <span><PlayArrowOutlinedIcon sx={{ color: '#64FFDA', fontSize: 10 }} /></span>
                                     <span className='ms-1' style={{ color: '#8892B0' }}>Bootstrap</span>
                                 </div>
-                                <div className='col-6 skill'><span><PlayArrowOutlinedIcon sx={{ color: '#64FFDA', fontSize: 10 }} /></span>
+                                <div className='col-6 skill'>
+                                    <span><PlayArrowOutlinedIcon sx={{ color: '#64FFDA', fontSize: 10 }} /></span>
                                     <span className='ms-1' style={{ color: '#8892B0' }}>Redux</span>
                                 </div>
-                                <div className='col-6 skill'><span><PlayArrowOutlinedIcon sx={{ color: '#64FFDA', fontSize: 10 }} /></span>
+                                <div className='col-6 skill'>
+                                    <span><PlayArrowOutlinedIcon sx={{ color: '#64FFDA', fontSize: 10 }} /></span>
                                     <span className='ms-1' style={{ color: '#8892B0' }}>React Query</span>
                                 </div>
-                                <div className='col-6 skill'><span><PlayArrowOutlinedIcon sx={{ color: '#64FFDA', fontSize: 10 }} /></span>
+                                <div className='col-6 skill'>
+                                    <span><PlayArrowOutlinedIcon sx={{ color: '#64FFDA', fontSize: 10 }} /></span>
                                     <span className='ms-1' style={{ color: '#8892B0' }}>Github</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-5 col-12 d-flex d-md-block justify-content-center mt-5 mt-md-0  imgcon'>
+                    <div className='col-md-5 col-12 d-flex d-md-block justify-content-center mt-10 mt-md-0  imgcon align-self-center '>
                         <ImgStyledDiv ref={ImgRef} className='imgBoxabout' width='300px' height='300px' widthSm='250px' heightSm='250px'>
                         <img alt='me' className='img-fluid h-100 w-100' src={me}/>
                         </ImgStyledDiv>

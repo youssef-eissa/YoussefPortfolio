@@ -16,7 +16,7 @@
         color: #8892B0;
         font-family: 'Hind', sans-serif;
         font-weight: 600;
-        font-size: 80px;
+        font-size: 70px;
 }
 .banner p{
     color: #8892B0;
@@ -36,7 +36,16 @@
 }
 .links .icon{
     transition: 0.3s;
+    
 }
+
+.links .icon:nth-child(4){
+    transition: 0.3s;
+    width: 50px !important;
+    height: 50px !important;
+    
+}
+
 .links .icon:hover{
     transform: translateY(-5px);
 }
@@ -51,7 +60,8 @@
     background-color: #25D366;
 }
 .links .icon:nth-child(4):hover {
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background-color: green;
+ 
 }
 
 .mailLink{
@@ -72,9 +82,47 @@
 }
 .mail{
     position: fixed;
-    right: 0px;
+    right: -20px;
     bottom: 130px;
     transform: rotate(90deg);
+}
+
+@media (max-width:1285px) {
+    .banner h1:first-of-type  { 
+        font-size: 60px;
+    }
+    .banner h1:nth-of-type(2){
+       
+        font-size: 50px;
+}
+.mail{
+    right: -50px;
+}
+.links{
+    left: 30px !important;
+}
+}
+
+@media (max-width:1200px) {
+    .banner h1:first-of-type  { 
+        font-size: 40px;
+    }
+    .banner h1:nth-of-type(2){
+       
+        font-size: 30px;
+}
+.banner {
+    height: 700px;
+    }
+}
+
+@media (max-width:1080px) {
+    .links{
+        left: 30px !important;
+    }
+    .banner {
+        height: 650px;
+        }
 }
 
 @media (max-width:768px) {
@@ -85,7 +133,21 @@
         font-size: 35px;
     }
     .banner {
-        height: 600px;
+        height: 550px;
         }
+
+}
+@media (max-width:600px) {
+    .banner {
+        margin-top: 0px !important;
+
+        }
+    .banner h1:first-of-type {
+        font-size: 30px;
+        }
+    .banner h1:nth-of-type(2) {
+        font-size: 25px;
+    }
+    
 
 }

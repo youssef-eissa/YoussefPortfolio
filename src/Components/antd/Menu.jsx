@@ -9,6 +9,8 @@ import ScrollIntoView from 'react-scroll-into-view'
 import { motion } from 'framer-motion';
 import { StyledLinkDiv } from '../styled/StyledLink';
 import { SocialIcon } from 'react-social-icons';
+import { BiPhoneCall } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 
 
@@ -57,9 +59,15 @@ export default function TemporaryDrawer() {
                             Projects
                         </motion.div>
                         </ScrollIntoView>
-                        <ScrollIntoView selector='#contact'>
+                        <ScrollIntoView selector='#experience'>
                             <motion.div initial='start' animate='animate' transition={{delay:0.3}} variants={variants} className='d-flex flex-column align-items-center '>
                             <span className='mb-2 '>03.</span>
+                           My Experience
+                        </motion.div>
+                    </ScrollIntoView>
+                    <ScrollIntoView selector='#contact'>
+                            <motion.div initial='start' animate='animate' transition={{delay:0.3}} variants={variants} className='d-flex flex-column align-items-center '>
+                            <span className='mb-2 '>04.</span>
                             Contact
                         </motion.div>
                     </ScrollIntoView>
@@ -73,9 +81,14 @@ export default function TemporaryDrawer() {
                         
                         <SocialIcon  target='_blank' className='icon rounded ' network='whatsapp' bgColor='transparent' url='https://wa.me/+201003003433?text=Hi,I%27m%20interested%20in%20your%20portfolio' />
                         
-                        <SocialIcon  target='_blank' url='https://www.instagram.com/youssef3issa/' className='icon rounded ' network='instagram' bgColor='transparent' />
+                      
+                        <Link target='_blank' to='tel:+201003003433' className='icon rounded mb-3  d-flex justify-content-center align-items-center'>
+                                              <BiPhoneCall  size={25}  color='white' />
+                                              </Link>
                         
                     </motion.div>
+                    <Link className='mailLink me-3' to={"mailto:Youssefeissa1812@gmail.com"}>Youssefeissa1812@gmail.com</Link>
+
             
       </List>
      
@@ -86,7 +99,8 @@ export default function TemporaryDrawer() {
     <div>
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}><Hamburger size={20} toggled={state[anchor]} /></Button>
+          <Button onClick={toggleDrawer(anchor, true)}><Hamburger color='#64FFDA' size={20} toggled={state[anchor]} />
+          </Button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}

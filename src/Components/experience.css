@@ -1,0 +1,19 @@
+.title{
+    font-size: 20px;
+    margin-bottom: 0px !important;
+}
+
+.desc{
+    font-size: 16px;
+}
+
+@media (max-width:768px) {
+    .title{
+        font-size: 16px;
+        margin-bottom: 0px !important;
+    }
+    
+    .desc{
+        font-size: 14px;
+    }
+}

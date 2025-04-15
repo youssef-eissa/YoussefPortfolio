@@ -1,9 +1,11 @@
 import './Main.css'
 import About from './components/About';
-import Banner from './components/Banner';
-import Contact from './components/Contact';
-import Navbar from './components/Navbar';
-import Projects from './components/Projects';
+import Navbar from './components/NavBar';
+import Banner from './components/Banner'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Experience from './components/Experience';
+
 
 
 
@@ -14,6 +16,7 @@ function App() {
       <Banner />
       <About />
       <Projects />
+      <Experience/>
       <Contact/>
     </div>
   )

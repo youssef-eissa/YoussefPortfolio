@@ -49,29 +49,35 @@ function Navbar() {
     return (
         <div className='container-fluid'>
             <div className='row d-flex justify-content-center'>
-                <div ref={NavBarRef} className='p-0 navbar col-md-10 col-12  d-flex justify-content-cente align-items-center'>
+                <div ref={NavBarRef} className='p-0 navbar col-xl-10  col-11  d-flex justify-content-cente align-items-center'>
                         <ScrollIntoView selector='#banner'>
                         <div className='logo ms-2 d-flex align-items-center justify-content-center'>
                         <h4 className=' d-flex align-items-center justify-content-center m-0'>Y</h4>
                         <div className='smallPolygon'></div>
                     </div>
                     </ScrollIntoView>
-                    <div className='navlinks d-md-flex d-none col-9 d-flex justify-content-end align-items-center'>
-                        <ScrollIntoView selector='#aboutSection' >
+                    <div className='navlinks d-lg-flex d-none col-9 col-md-10 d-flex justify-content-end align-items-center'>
+                        <ScrollIntoView  selector='#aboutSection' >
                             <motion.div id='about' initial='start' animate='animate' transition={{delay:0.1}} variants={variants} className='me-4'>
                             <span className='me-2'>01.</span>
                             About Me
                         </motion.div>
                         </ScrollIntoView>
-                        <ScrollIntoView selector='#projects'>
+                        <ScrollIntoView  selector='#projects'>
                             <motion.div initial='start' animate='animate' transition={{delay:0.2}} variants={variants} className='me-4'>
                             <span className='me-2 col-3'>02.</span>
                             Projects
                         </motion.div>
                         </ScrollIntoView>
-                        <ScrollIntoView selector='#contact'>
+                        <ScrollIntoView selector='#experience'>
                             <motion.div initial='start' animate='animate' transition={{delay:0.3}} variants={variants} className='me-4 '>
                             <span className='me-2 '>03.</span>
+                            My Experience
+                        </motion.div>
+                        </ScrollIntoView>
+                        <ScrollIntoView selector='#contact'>
+                            <motion.div initial='start' animate='animate' transition={{delay:0.3}} variants={variants} className='me-4 '>
+                            <span className='me-2 '>04.</span>
                             Contact
                         </motion.div>
                         </ScrollIntoView>
@@ -79,7 +85,7 @@ function Navbar() {
                             <StyledLinkDiv target={'_blank'} padding={'6px 16px'} to='https://drive.google.com/file/d/1Fqj6dtvQvCrFSbJL2eMSszSL9Gc-FErI/view?usp=sharing' link='Resume'/>
                         </motion.div>
                     </div>
-                    <div className='col-4 d-md-none d-flex justify-content-end'>
+                    <div className='col-4 d-lg-none d-flex justify-content-end'>
                         <TemporaryDrawer/>
                 </div>
                 </div>
