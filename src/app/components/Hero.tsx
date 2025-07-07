@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { castIcon } from '../utils/cast-icon';
 
 import me from '/public/assest/meNew.jpeg'
 
@@ -8,19 +9,27 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 
+
 function Hero() {
+  const FaLinkedinIcon = castIcon(FaLinkedin);
+  const FaGithubIcon = castIcon(FaGithub);
+  const FaWhatsappIcon = castIcon(FaWhatsapp);
+
   return (
     <section id='who-am-i' className='grid grid-cols-1 lg:grid-cols-2 gap-5 '>
       <div className='dark:bg-secondaryText  lg:h-[650px] lg:grid-cols-[120px_1fr] grid-cols-1 grid p-10 lg:rounded-e-2xl mx-5 rounded-2xl gap-5 lg:gap-0'>
         <div className='flex lg:flex-col justify-between '>
           <Link target='_blank' className='border border-transparent hover:border-[#0a66c2] p-2 w-fit rounded-lg transition-all duration-300 hover:bg-white hover:text-[#0a66c2] text-icon ' href={'https://www.linkedin.com/in/youssef-eissa1812/'}>
-            <FaLinkedin className='text-2xl sm:text-3xl lg:text-4xl'  />
+            <FaLinkedinIcon className='text-2xl sm:text-3xl lg:text-4xl'  />
+
             </Link>
              <Link target='_blank' className='border border-transparent hover:border-[#24292e] p-2 w-fit rounded-lg transition-all duration-300 hover:bg-white hover:text-[#24292e] text-icon ' href={'https://github.com/youssef-eissa'}>
-            <FaGithub className='text-2xl sm:text-3xl lg:text-4xl'  />
+            <FaGithubIcon className='text-2xl sm:text-3xl lg:text-4xl'  />
+
             </Link>
              <Link target='_blank' className='border border-transparent hover:border-[#25d366] p-2 w-fit rounded-lg transition-all duration-300 hover:bg-white hover:text-[#25d366] text-icon ' href={'https://wa.me/201003003433'}>
-            <FaWhatsapp className='text-2xl sm:text-3xl lg:text-4xl'  />
+            <FaWhatsappIcon className='text-2xl sm:text-3xl lg:text-4xl'  />
+
             </Link>
         </div>
         <div className='relative rounded-xl overflow-hidden h-[200px] sm:h-[300px] lg:h-full  '>

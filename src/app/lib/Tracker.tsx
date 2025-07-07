@@ -23,11 +23,11 @@ function Tracker() {
         };
     },[])
   return (
-    show && (
+    show ? (
         <span style={{
         transform:`translate(${position.x}px,${position.y}px)`
     }} className={' absolute hidden lg:block top-0 left-0 z-50 w-12 aspect-square rounded-full border-2 border-secondaryText'}></span>
-    )
+    ):null
   )
 }
 

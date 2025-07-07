@@ -5,7 +5,6 @@ import { linksTypes } from '../types/links';
 import Link from 'next/link';
 import { useHash } from '../utils/useHash';
 import { scrollToSection } from '../utils/scrollToSection';
-import ThemeToggle from '../lib/ThemeToggle';
 
 
 function Navbar() {
