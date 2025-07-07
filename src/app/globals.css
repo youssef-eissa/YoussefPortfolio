@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #0d1b2a;
+  --foreground: #ffffff;
+  --secondary: #778da9;
+  --icon:#1b263b;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: "Satoshi", "sans-serif";
+  --font-oswald: "Oswald", "sans-serif";
+  --font-antonio: "Antonio", "sans-serif";
+  --font-bebas: "Bebas Neue", "sans-serif";
+  --color-mainText:oklch(0.4599 0.0564 252.67);
+  --color-secondaryText: oklch(0.6363 0.0493 254.61);
+  --color-icon: var(--icon);
+  --color-title:#1b263b;
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1920px;
+
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0d1b2a;
+    --foreground: #ededed;
+  }
+} */
+
+@layer base {
+  body{
+    @apply dark:bg-background bg-foreground transition-all duration-300;
+  }
+}
+
+
+
+.section{
+  padding: 100px;
+}
+
+.stroke-text {
+  color: #415A77;
+  -webkit-text-stroke: 2px var(--secondary);
+}
