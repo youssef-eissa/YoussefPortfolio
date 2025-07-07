@@ -1,6 +1,7 @@
 import React from 'react'
-import { LuLinkedin } from "react-icons/lu";
-import { FaGithub,FaWhatsapp } from "react-icons/fa";
+
+import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+
 import me from '/public/assest/meNew.jpeg'
 
 import Link from 'next/link';
@@ -13,7 +14,7 @@ function Hero() {
       <div className='dark:bg-secondaryText  lg:h-[650px] lg:grid-cols-[120px_1fr] grid-cols-1 grid p-10 lg:rounded-e-2xl mx-5 rounded-2xl gap-5 lg:gap-0'>
         <div className='flex lg:flex-col justify-between '>
           <Link target='_blank' className='border border-transparent hover:border-[#0a66c2] p-2 w-fit rounded-lg transition-all duration-300 hover:bg-white hover:text-[#0a66c2] text-icon ' href={'https://www.linkedin.com/in/youssef-eissa1812/'}>
-            <LuLinkedin className='text-2xl sm:text-3xl lg:text-4xl'  />
+            <FaLinkedin className='text-2xl sm:text-3xl lg:text-4xl'  />
             </Link>
              <Link target='_blank' className='border border-transparent hover:border-[#24292e] p-2 w-fit rounded-lg transition-all duration-300 hover:bg-white hover:text-[#24292e] text-icon ' href={'https://github.com/youssef-eissa'}>
             <FaGithub className='text-2xl sm:text-3xl lg:text-4xl'  />
